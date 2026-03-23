@@ -6,11 +6,15 @@ public class Book {
     private String ISBN; 
     private boolean avail;
 
+    public Book(String title, String author, String ISBN){
+        this(title, author, ISBN, true);
+    }
+
     public Book(String title, String author, String ISBN, boolean avail){
         this.title = title; 
         this.author = author; 
         this.ISBN = ISBN; 
-        this.avail = true; 
+        this.avail = avail;
     }
      
     public String getTitle(){
