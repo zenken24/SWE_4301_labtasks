@@ -64,15 +64,30 @@ public class App
 
         Book b5 = new Book("DB", "E", "55555");
         Book b6 = new Book("OS", "F", "66666");
+        Book b7 = new Book("Math", "G", "77777");
+        Book b8 = new Book("AI", "H", "88888");
 
         library.addBook(b5);
         library.addBook(b6);
+        library.addBook(b7);
+        library.addBook(b8);
+
+        Student s2 = new Student("Mina");
+        library.addPerson(s2);
+        library.returnBook(s, b1);
+        library.returnBook(f, b2);
+        library.returnBook(s, b3);
+        library.returnBook(f, b4);
 
         try {
-            library.borrowBook(s, b1);
-            library.borrowBook(s, b3);
-            library.borrowBook(s, b5);
-            library.borrowBook(s, b6); //should fail
+            library.borrowBook(s2, b1);
+            library.borrowBook(s2, b2);
+            library.borrowBook(s2, b3);
+            library.borrowBook(s2, b4);
+            library.borrowBook(s2, b5);
+            library.borrowBook(s2, b6);
+            library.borrowBook(s2, b7);
+            library.borrowBook(s2, b8); // should fail
         } catch (BookNotAvailableException | BorrowLimitExceededException e) {
             System.out.println(e.getMessage());
         }
