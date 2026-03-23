@@ -1,0 +1,7 @@
+package com.example.library;
+
+public class BorrowLimitExceededException extends Exception {
+    public BorrowLimitExceededException(String message) {
+        super(message);
+    }
+}
