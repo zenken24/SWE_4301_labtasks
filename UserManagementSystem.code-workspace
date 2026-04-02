@@ -1,11 +1,18 @@
 {
+  "folders": [
+    {
+      "path": "Lab 7 - SOAP/UserManagementSystem"
+    }
+  ],
+  "settings": {
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
-        "Lab 7 - SOAP/UserManagementSystem/src"
+      "src"
     ],
-    "java.project.outputPath": "Lab 7 - SOAP/UserManagementSystem/bin",
+    "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "Lab 7 - SOAP/UserManagementSystem/lib/**/*.jar"
+      "lib/**/*.jar"
     ]
+  }
 }

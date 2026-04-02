@@ -1,0 +1,5 @@
+model/User.class
+service/UserService.class
+server/Server.class
+service/UserServiceImpl.class
+client/SoapClient.class
